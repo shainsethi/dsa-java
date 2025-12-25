@@ -15,12 +15,12 @@
 
 #### Components of Flowchart
 
-+ Start / Exit : <div style="width: 50px; height: 20px; background-color: #000000; border-radius: 50%; display: inline-block; text-align: center; color: white; line-height: 20px;">start</div>
++ Start / Exit : <div style="width: 50px; height: 20px; background-color: white; border: 2px solid black; border-radius: 50%; display: inline-block; text-align: center; color: black; line-height: 20px;">start</div>
 
-+ Input / Output : <div style="width: 80px; height: 30px; background-color: #000000; transform: skew(-20deg); display: inline-block; text-align: center; color: white; line-height: 30px;">Input</div>
++ Input / Output : <div style="width: 80px; height: 30px; background-color: white; border: 2px solid black; transform: skew(-20deg); display: inline-block; text-align: center; color: black; line-height: 30px;">Input</div>
 
-+ Process : <div style="width: 80px; height: 30px; background-color: #000000; display: inline-block; text-align: center; color: white; line-height: 30px;">Process</div>
-+ Decision : <div style="width: 30px; height: 30px; background-color: #000000; transform: rotate(45deg); display: inline-block; vertical-align: middle; margin: 10px;"></div>
++ Process : <div style="width: 80px; height: 30px; background-color: white; border: 2px solid black; display: inline-block; text-align: center; color: black; line-height: 30px;">Process</div>
++ Decision : <div style="width: 30px; height: 30px; background-color: white; border: 2px solid black; transform: rotate(45deg); display: inline-block; vertical-align: middle; margin: 10px;"></div>
 + Connector : <div style="display: inline-block; font-size: 30px; vertical-align: middle; line-height: 30px;">&rarr;</div>
 
 
@@ -70,7 +70,7 @@ END
 ```mermaid
 flowchart TD
     Start([Start]) --> Input[/Input P, R, T/]
-    Input --> Process[SI = (P * R * T) / 100]
+    Input --> Process["SI = (P * R * T) / 100"]
     Process --> Print[/Print SI/]
     Print --> End([Exit])
 ```
@@ -189,7 +189,7 @@ END
 flowchart TD
     Start([Start]) --> Input[/Input n/]
     Input --> Init[div = 2]
-    Init --> LoopCheck{div <= sqrt(n)?}
+    Init --> LoopCheck{"div <= sqrt(n)?"}
     
     LoopCheck -- Yes --> DivCheck{n % div == 0?}
     LoopCheck -- No --> PrintPrime[/Print "Prime"/]
@@ -233,7 +233,7 @@ END
 flowchart TD
     Start([Start]) --> Input[/Input n/]
     Input --> Init[sum = 0, i = 1]
-    Init --> LoopCheck{i <= n?}
+    Init --> LoopCheck{"i <= n?"}
     
     LoopCheck -- Yes --> Add[sum = sum + i]
     Add --> Inc[i = i + 1]

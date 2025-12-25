@@ -16,7 +16,7 @@ This document contains flowcharts and pseudo-code for the practice questions lis
 ```mermaid
 flowchart TD
     Start([Start]) --> Input[/Input r/]
-    Input --> Process[area = 3.14 * r * r]
+    Input --> Process["area = 3.14 * r * r"]
     Process --> Print[/Print area/]
     Print --> End([Exit])
 ```
@@ -79,7 +79,7 @@ END
 ```mermaid
 flowchart TD
     Start([Start]) --> Init[num = 10]
-    Init --> LoopCheck{num <= 100?}
+    Init --> LoopCheck{"num <= 100?"}
     LoopCheck -- Yes --> Print[/Print num/]
     Print --> Increment[num = num + 2]
     Increment --> LoopCheck
@@ -111,12 +111,12 @@ END
 ```mermaid
 flowchart TD
     Start([Start]) --> Init[sum = 0, count = 1]
-    Init --> LoopCheck{count <= 25?}
+    Init --> LoopCheck{"count <= 25?"}
     LoopCheck -- Yes --> Input[/Input score/]
     Input --> Add[sum = sum + score]
     Add --> Inc[count = count + 1]
     Inc --> LoopCheck
-    LoopCheck -- No --> Calc[avg = sum / 25]
+    LoopCheck -- No --> Calc["avg = sum / 25"]
     Calc --> Print[/Print avg/]
     Print --> End([Exit])
 ```
