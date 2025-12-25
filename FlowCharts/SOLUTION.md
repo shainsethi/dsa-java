@@ -15,9 +15,9 @@ This document contains flowcharts and pseudo-code for the practice questions lis
 **Flowchart:**
 ```mermaid
 flowchart TD
-    Start([Start]) --> Input[/Input r/]
-    Input --> Process[area = 3.14 * r * r]
-    Process --> Print[/Print area/]
+    Start([Start]) --> Input[/"Input r"/]
+    Input --> Process["area = 3.14 * r * r"]
+    Process --> Print[/"Print area"/]
     Print --> End([Exit])
 ```
 
@@ -44,10 +44,10 @@ END
 **Flowchart:**
 ```mermaid
 flowchart TD
-    Start([Start]) --> Input[/Input a, b/]
-    Input --> Decision{Is a > b?}
-    Decision -- Yes --> PrintA[/Print a/]
-    Decision -- No --> PrintB[/Print b/]
+    Start([Start]) --> Input[/"Input a, b"/]
+    Input --> Decision{"Is a > b?"}
+    Decision -- Yes --> PrintA[/"Print a"/]
+    Decision -- No --> PrintB[/"Print b"/]
     PrintA --> End([Exit])
     PrintB --> End
 ```
@@ -78,10 +78,10 @@ END
 **Flowchart:**
 ```mermaid
 flowchart TD
-    Start([Start]) --> Init[num = 10]
-    Init --> LoopCheck{num <= 100?}
-    LoopCheck -- Yes --> Print[/Print num/]
-    Print --> Increment[num = num + 2]
+    Start([Start]) --> Init["num = 10"]
+    Init --> LoopCheck{"num <= 100?"}
+    LoopCheck -- Yes --> Print[/"Print num"/]
+    Print --> Increment["num = num + 2"]
     Increment --> LoopCheck
     LoopCheck -- No --> End([Exit])
 ```
@@ -110,14 +110,14 @@ END
 **Flowchart:**
 ```mermaid
 flowchart TD
-    Start([Start]) --> Init[sum = 0, count = 1]
-    Init --> LoopCheck{count <= 25?}
-    LoopCheck -- Yes --> Input[/Input score/]
-    Input --> Add[sum = sum + score]
-    Add --> Inc[count = count + 1]
+    Start([Start]) --> Init["sum = 0, count = 1"]
+    Init --> LoopCheck{"count <= 25?"}
+    LoopCheck -- Yes --> Input[/"Input score"/]
+    Input --> Add["sum = sum + score"]
+    Add --> Inc["count = count + 1"]
     Inc --> LoopCheck
-    LoopCheck -- No --> Calc[avg = sum / 25]
-    Calc --> Print[/Print avg/]
+    LoopCheck -- No --> Calc["avg = sum / 25"]
+    Calc --> Print[/"Print avg"/]
     Print --> End([Exit])
 ```
 

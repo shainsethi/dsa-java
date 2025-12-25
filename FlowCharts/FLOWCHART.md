@@ -15,12 +15,12 @@
 
 #### Components of Flowchart
 
-+ Start / Exit : <div style="width: 50px; height: 20px; background-color: #000000; border-radius: 50%; display: inline-block; text-align: center; color: white; line-height: 20px;">start</div>
++ Start / Exit : <div style="width: 50px; height: 20px; background-color: white; border: 2px solid black; border-radius: 50%; display: inline-block; text-align: center; color: black; line-height: 20px;">start</div>
 
-+ Input / Output : <div style="width: 80px; height: 30px; background-color: #000000; transform: skew(-20deg); display: inline-block; text-align: center; color: white; line-height: 30px;">Input</div>
++ Input / Output : <div style="width: 80px; height: 30px; background-color: white; border: 2px solid black; transform: skew(-20deg); display: inline-block; text-align: center; color: black; line-height: 30px;">Input</div>
 
-+ Process : <div style="width: 80px; height: 30px; background-color: #000000; display: inline-block; text-align: center; color: white; line-height: 30px;">Process</div>
-+ Decision : <div style="width: 30px; height: 30px; background-color: #000000; transform: rotate(45deg); display: inline-block; vertical-align: middle; margin: 10px;"></div>
++ Process : <div style="width: 80px; height: 30px; background-color: white; border: 2px solid black; display: inline-block; text-align: center; color: black; line-height: 30px;">Process</div>
++ Decision : <div style="width: 30px; height: 30px; background-color: white; border: 2px solid black; transform: rotate(45deg); display: inline-block; vertical-align: middle; margin: 10px;"></div>
 + Connector : <div style="display: inline-block; font-size: 30px; vertical-align: middle; line-height: 30px;">&rarr;</div>
 
 
@@ -39,9 +39,9 @@
 
 ```mermaid
 flowchart TD
-    Start([Start]) --> Input[/Input a, b/]
-    Input --> Process[Sum = a + b]
-    Process --> Print[/Print Sum/]
+    Start([Start]) --> Input[/"Input a, b"/]
+    Input --> Process["Sum = a + b"]
+    Process --> Print[/"Print Sum"/]
     Print --> End([Exit])
 ```
 
@@ -69,9 +69,9 @@ END
 
 ```mermaid
 flowchart TD
-    Start([Start]) --> Input[/Input P, R, T/]
-    Input --> Process[SI = (P * R * T) / 100]
-    Process --> Print[/Print SI/]
+    Start([Start]) --> Input[/"Input P, R, T"/]
+    Input --> Process["SI = (P * R * T) / 100"]
+    Process --> Print[/"Print SI"/]
     Print --> End([Exit])
 ```
 
@@ -100,15 +100,15 @@ END
 
 ```mermaid
 flowchart TD
-    Start([Start]) --> Input[/Input a, b, c/]
-    Input --> D1{Is a > b?}
-    D1 -- Yes --> D2{Is a > c?}
-    D1 -- No --> D3{Is b > c?}
+    Start([Start]) --> Input[/"Input a, b, c"/]
+    Input --> D1{"Is a > b?"}
+    D1 -- Yes --> D2{"Is a > c?"}
+    D1 -- No --> D3{"Is b > c?"}
     
-    D2 -- Yes --> PrintA[/Print a/]
-    D2 -- No --> PrintC[/Print c/]
+    D2 -- Yes --> PrintA[/"Print a"/]
+    D2 -- No --> PrintC[/"Print c"/]
     
-    D3 -- Yes --> PrintB[/Print b/]
+    D3 -- Yes --> PrintB[/"Print b"/]
     D3 -- No --> PrintC
     
     PrintA --> End([Exit])
@@ -150,15 +150,15 @@ END
 
 ```mermaid
 flowchart TD
-    Start([Start]) --> Input[/Input n/]
-    Input --> Init[div = 2]
-    Init --> LoopCheck{div < n?}
+    Start([Start]) --> Input[/"Input n"/]
+    Input --> Init["div = 2"]
+    Init --> LoopCheck{"div < n?"}
     
-    LoopCheck -- Yes --> DivCheck{n % div == 0?}
-    LoopCheck -- No --> PrintPrime[/Print "Prime"/]
+    LoopCheck -- Yes --> DivCheck{"n % div == 0?"}
+    LoopCheck -- No --> PrintPrime[/"Print Prime"/]
     
-    DivCheck -- Yes --> PrintNotPrime[/Print "Not Prime"/]
-    DivCheck -- No --> Increment[div = div + 1]
+    DivCheck -- Yes --> PrintNotPrime[/"Print Not Prime"/]
+    DivCheck -- No --> Increment["div = div + 1"]
     
     Increment --> LoopCheck
     
@@ -187,15 +187,15 @@ END
 
 ```mermaid
 flowchart TD
-    Start([Start]) --> Input[/Input n/]
-    Input --> Init[div = 2]
-    Init --> LoopCheck{div <= sqrt(n)?}
+    Start([Start]) --> Input[/"Input n"/]
+    Input --> Init["div = 2"]
+    Init --> LoopCheck{"div <= sqrt(n)?"}
     
-    LoopCheck -- Yes --> DivCheck{n % div == 0?}
-    LoopCheck -- No --> PrintPrime[/Print "Prime"/]
+    LoopCheck -- Yes --> DivCheck{"n % div == 0?"}
+    LoopCheck -- No --> PrintPrime[/"Print Prime"/]
     
-    DivCheck -- Yes --> PrintNotPrime[/Print "Not Prime"/]
-    DivCheck -- No --> Increment[div = div + 1]
+    DivCheck -- Yes --> PrintNotPrime[/"Print Not Prime"/]
+    DivCheck -- No --> Increment["div = div + 1"]
     
     Increment --> LoopCheck
     
@@ -231,15 +231,15 @@ END
 
 ```mermaid
 flowchart TD
-    Start([Start]) --> Input[/Input n/]
-    Input --> Init[sum = 0, i = 1]
-    Init --> LoopCheck{i <= n?}
+    Start([Start]) --> Input[/"Input n"/]
+    Input --> Init["sum = 0, i = 1"]
+    Init --> LoopCheck{"i <= n?"}
     
-    LoopCheck -- Yes --> Add[sum = sum + i]
-    Add --> Inc[i = i + 1]
+    LoopCheck -- Yes --> Add["sum = sum + i"]
+    Add --> Inc["i = i + 1"]
     Inc --> LoopCheck
     
-    LoopCheck -- No --> Print[/Print sum/]
+    LoopCheck -- No --> Print[/"Print sum"/]
     Print --> End([Exit])
 ```
 
