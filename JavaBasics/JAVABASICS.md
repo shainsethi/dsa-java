@@ -63,11 +63,48 @@ When a variable is declared, memory is allocated:
 
 ```mermaid
 flowchart LR
-    A[Variable: a] -->|Stores| V1[Value: 10]
-    B[Variable: b] -->|Stores| V2[Value: 5]
+    subgraph Memory["Memory"]
+        direction LR
+        
+        %% Nodes representing memory blocks
+        
+        N1[" "] 
+        
+        subgraph a ["a"]
+            direction TB
+            V1["10"]
+        end
+        
+        N2[" "]
+        N3[" "]
+        N4[" "]
+        
+        subgraph b ["b"]
+            direction TB
+            V2["5"]
+        end
+        
+        N5[" "]
+        N6[" "]
+
+        %% Invisible links to enforce horizontal ordering
+        N1 ~~~ a ~~~ N2 ~~~ N3 ~~~ N4 ~~~ b ~~~ N5 ~~~ N6
+    end
+
+    %% Styles - PURE BLACK HIGH CONTRAST
     
-    style V1 fill:#d1e7dd,stroke:#0f5132
-    style V2 fill:#d1e7dd,stroke:#0f5132
+    %% Container Style
+    style Memory fill:#f8f9fa,stroke:#000000,stroke-width:2px,color:#000000
+
+    %% Shared Block Style (Black outlines)
+    classDef memBlock fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000;
+    
+    %% Apply to all nodes
+    class N1,N2,N3,N4,N5,N6,V1,V2 memBlock;
+
+    %% Label Style (Black Text)
+    style a fill:transparent,stroke:none,color:#000000
+    style b fill:transparent,stroke:none,color:#000000
 ```
 
 - The **value** is stored inside a memory block.
