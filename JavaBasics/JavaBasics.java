@@ -37,13 +37,13 @@ public class JavaBasics { // class name is the name of the file
         System.out.println(ch);
         boolean isTrue = true; // used to store true or false
         System.out.println(isTrue);
-        int d = 10; // used to store number between -2^31 to 2^31
+        int d = 10; // used to store number between -2^31 to 2^31 - 1
         System.out.println(d);
-        long e = 10L; // used to store number between -2^63 to 2^63
+        long e = 10L; // used to store number between -2^63 to 2^63 - 1
         System.out.println(e);
-        float f = 10.5f; // used to store decimal number between -2^31 to 2^31
+        float f = 10.5f; // used to store decimal number (approx range of ±3.4E38)
         System.out.println(f);
-        double g = 10.5; // used to store decimal number between -2^63 to 2^63
+        double g = 10.5; // used to store decimal number (approx range of ±1.8E308)
         System.out.println(g);
         short h = 10; // used to store number between -32768 to 32767
         System.out.println(h);
