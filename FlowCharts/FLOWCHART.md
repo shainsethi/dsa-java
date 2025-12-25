@@ -15,13 +15,16 @@
 
 #### Components of Flowchart
 
-+ Start / Exit : <div style="width: 50px; height: 20px; background-color: white; border: 2px solid black; border-radius: 50%; display: inline-block; text-align: center; color: black; line-height: 20px;">start</div>
+```mermaid
+graph LR
+    A([Start / Exit]):::white
+    B[/Input / Output/]:::white
+    C[Process]:::white
+    D{Decision}:::white
+    E((Connector)):::white
 
-+ Input / Output : <div style="width: 80px; height: 30px; background-color: white; border: 2px solid black; transform: skew(-20deg); display: inline-block; text-align: center; color: black; line-height: 30px;">Input</div>
-
-+ Process : <div style="width: 80px; height: 30px; background-color: white; border: 2px solid black; display: inline-block; text-align: center; color: black; line-height: 30px;">Process</div>
-+ Decision : <div style="width: 30px; height: 30px; background-color: white; border: 2px solid black; transform: rotate(45deg); display: inline-block; vertical-align: middle; margin: 10px;"></div>
-+ Connector : <div style="display: inline-block; font-size: 30px; vertical-align: middle; line-height: 30px;">&rarr;</div>
+    classDef white fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+```
 
 
 #### Examples of Flowchart
