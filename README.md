@@ -15,7 +15,7 @@ If you are a beginner, it is highly recommended to start with the logic-building
 - Logic Optimization (Prime Number checking)
 
 ## 💻 Java Source Code
-*(Coming Soon - Section for your upcoming .java files)*
 
----
-*Follow my journey as I master DSA in Java!*
+### Module 1: Java Basics
+- **Guide**: [Java Basics Concepts](./JavaBasics/JAVABASICS.md)
+- **Code**: [JavaBasics.java](./JavaBasics/JavaBasics.java)
