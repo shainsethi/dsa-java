@@ -9,7 +9,7 @@ public class SolutionOne {
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        float avg = (a + b + c) / 3;
+        int avg = (a + b + c) / 3;
         System.out.println(avg);
     }
 }
