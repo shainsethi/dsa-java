@@ -16,6 +16,12 @@ If you are a beginner, it is highly recommended to start with the logic-building
 
 ## 💻 Java Source Code
 
-### Module 1: Java Basics
-- **Guide**: [Java Basics Concepts](./JavaBasics/JAVABASICS.md)
-- **Code**: [JavaBasics.java](./JavaBasics/JavaBasics.java)
+### Module 1: Variables & Data Types
+Master the fundamentals of Java programming, including memory management, input/output, and type casting.
+
+- **Main Guide**: [Variables & Data Types Concepts](./Variables/VARIABLES.md)
+- **Core Code**: [Variables.java](./Variables/Variables.java)
+- **Practice Solutions**: [Java Solutions](./Variables/Solutions/)
+
+---
+*Happy Coding!* 🚀

@@ -1,6 +1,8 @@
-package JavaBasics; // package name is the name of the folder 
+package Variables; // package name is the name of the folder 
 
-public class JavaBasics { // class name is the name of the file
+import java.util.*;
+
+public class Variables { // class name is the name of the file
     public static void main(String args[]) { // main method is the entry point of the program
 
         System.out.print("Hello World"); // print statement
@@ -60,5 +62,47 @@ public class JavaBasics { // class name is the name of the file
         System.out.println();
 
         // Input in Java
+        Scanner sc = new Scanner(System.in);
+        String input = sc.next(); // reads a string of characters until a whitespace is encountered.
+        System.out.println(input);
+
+        sc.nextLine(); // only need this in case of nextLine() to clear buffer as it stores \n in
+                       // buffer
+
+        String line = sc.nextLine(); // reads a string of characters with spaces. you can write a paragraph.
+        System.out.println(line);
+
+        int num = sc.nextInt(); // reads an integer.
+        System.out.println(num);
+
+        boolean isfalse = sc.nextBoolean(); // reads a boolean.
+        System.out.println(isfalse);
+
+        long l = sc.nextLong(); // reads a long.
+        System.out.println(l);
+
+        short s = sc.nextShort(); // reads a short.
+        System.out.println(s);
+
+        // Sum of Two number (Input from User)
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        int sum2 = num1 + num2;
+        System.out.println(sum2);
+
+        // Product of Two number (Input from User)
+        int num3 = sc.nextInt();
+        int num4 = sc.nextInt();
+        int product = num3 * num4;
+        System.out.println(product);
+
+        // Area of Circle (Input from User)
+        float radius = sc.nextFloat();
+        float area = 3.14f * radius * radius; /*
+                                               * By default Java considers decimal values as double, so we need to add
+                                               * 'f' at the end to make it float.
+                                               */
+        System.out.println(area);
+
     }
 }
