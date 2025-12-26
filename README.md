@@ -23,5 +23,12 @@ Master the fundamentals of Java programming, including memory management, input/
 - **Core Code**: [Variables.java](./Variables/Variables.java)
 - **Practice Solutions**: [Java Solutions](./Variables/Solutions/)
 
+### Module 2: Operators
+Understand symbols and expressions that manipulate variables and logic.
+
+- **Main Guide**: [Operators Concepts](./Operators/OPERATORS.md)
+- **Core Code**: [Operators.java](./Operators/Operators.java)
+- **Practice Solutions**: [Java Solutions](./Operators/SOLUTIONS.md)
+
 ---
 *Happy Coding!* 🚀
