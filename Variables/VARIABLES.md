@@ -114,20 +114,20 @@ flowchart LR
         N1 ~~~ a ~~~ N2 ~~~ N3 ~~~ N4 ~~~ b ~~~ N5 ~~~ N6
     end
 
-    %% Styles - PURE BLACK HIGH CONTRAST
+    %% Styles - PREMIUM SLATE THEME
     
     %% Container Style
-    style Memory fill:#f8f9fa,stroke:#000000,stroke-width:2px,color:#000000
+    style Memory fill:#f1f5f9,stroke:#64748b,stroke-width:2px,color:#1e293b
 
-    %% Shared Block Style (Black outlines)
-    classDef memBlock fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000;
+    %% Shared Block Style (Slate outlines)
+    classDef memBlock fill:#ffffff,stroke:#94a3b8,stroke-width:2px,color:#1e293b;
     
     %% Apply to all nodes
     class N1,N2,N3,N4,N5,N6,V1,V2 memBlock;
 
-    %% Label Style (Black Text)
-    style a fill:transparent,stroke:none,color:#000000
-    style b fill:transparent,stroke:none,color:#000000
+    %% Label Style (Dark Slate Text)
+    style a fill:transparent,stroke:none,color:#1e293b,font-weight:bold
+    style b fill:transparent,stroke:none,color:#1e293b,font-weight:bold
 ```
 
 - The **value** is stored inside a memory block.
@@ -172,7 +172,7 @@ flowchart LR
         b7[Bit 7] --- b6[Bit 6] --- b5[Bit 5] --- b4[Bit 4]
         b4 --- b3[Bit 3] --- b2[Bit 2] --- b1[Bit 1] --- b0[Bit 0]
     end
-    style Byte fill:#f8f9fa,stroke:#212529,stroke-width:2px
+    style Byte fill:#f8fafc,stroke:#6366f1,stroke-width:2px,color:#1e293b
 ```
 
 ### Example: Sum of Two Numbers
@@ -337,18 +337,18 @@ flowchart TB
     end
     
     %% Outside annotations
-    JRE_Note["Java\nRuntime\nEnvironment"]
+    JRE_Note["Java<br/>Runtime<br/>Environment"]
     
     %% Connections
     JRE_Note -.-> JRE
     
-    %% Styles
-    style JDK fill:#40E0D0,stroke:#333,stroke-width:2px
-    style JRE fill:#FFFFFF,stroke:#333,stroke-width:2px
-    style JVM fill:#FF1493,stroke:#333,stroke-width:2px,color:white
-    style Libs fill:none,stroke:none
-    style DevTools fill:none,stroke:none
-    style JRE_Note fill:none,stroke:none,color:#FF4500
+    %% Styles - PREMIUM PALETTE
+    style JDK fill:#e0e7ff,stroke:#6366f1,stroke-width:2px,color:#1e293b
+    style JRE fill:#ffffff,stroke:#818cf8,stroke-width:2px,color:#1e293b
+    style JVM fill:#6366f1,stroke:#4338ca,stroke-width:2px,color:#ffffff
+    style Libs fill:none,stroke:none,color:#475569
+    style DevTools fill:none,stroke:none,color:#475569
+    style JRE_Note fill:none,stroke:none,color:#f59e0b,font-weight:bold
 ```
 - **JDK (Java Development Kit)**: A collection of tools to develop Java applications.
 - **JRE (Java Runtime Environment)**: A part of JDK used to run Java code.
@@ -358,16 +358,16 @@ flowchart TB
 
 ```mermaid
 flowchart LR
-    SC["Source Code\n(.java)"] --> Comp["Compiler"]
-    Comp --> Byte["Byte Code\n(.class)"]
-    Byte --> JVM(("Java Virtual Machine\n(JVM)"))
-    JVM --> Native["Native Code\n(Windows, Mac, Linux)"]
+    SC["Source Code<br/>(.java)"] --> Comp["Compiler"]
+    Comp --> Byte["Byte Code<br/>(.class)"]
+    Byte --> JVM(("Java Virtual Machine<br/>(JVM)"))
+    JVM --> Native["Native Code<br/>(Windows, Mac, Linux)"]
 
-    style SC fill:#90EE90,stroke:#333,stroke-width:2px,color:black
-    style Comp fill:#FFFFFF,stroke:#333,stroke-width:2px,color:black
-    style Byte fill:#FF69B4,stroke:#333,stroke-width:2px,color:black
-    style JVM fill:#FFFFFF,stroke:#333,stroke-width:2px,color:black
-    style Native fill:#FFD700,stroke:#333,stroke-width:2px,color:black
+    style SC fill:#ecfdf5,stroke:#10b981,stroke-width:2px,color:#064e3b
+    style Comp fill:#ffffff,stroke:#94a3b8,stroke-width:2px,color:#1e293b
+    style Byte fill:#fff1f2,stroke:#f43f5e,stroke-width:2px,color:#881337
+    style JVM fill:#ffffff,stroke:#6366f1,stroke-width:2px,color:#1e293b
+    style Native fill:#fef3c7,stroke:#f59e0b,stroke-width:2px,color:#78350f
 ```
 1. **Source Code**: Program written in a `.java` file.
 2. **Compiler**: Part of JDK that converts source code to **Byte Code**.
