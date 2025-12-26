@@ -37,5 +37,14 @@ public class Operators {
         System.out.println("d || e : " + (d > e || e > d));
         System.out.println("!d : " + (!(d > e)));
 
+        // assignment operators
+        int f = 10;
+        int g = 20;
+        System.out.println("f += g : " + (f += g));
+        System.out.println("f -= g : " + (f -= g));
+        System.out.println("f *= g : " + (f *= g));
+        System.out.println("f /= g : " + (f /= g));
+        System.out.println("f %= g : " + (f %= g));
+
     }
 }
