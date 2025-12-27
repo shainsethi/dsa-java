@@ -35,13 +35,15 @@ Java is a **Statically Typed Language**, which means we must declare the data ty
 ## Getting Started
 
 ### Creating a Java File
-Use the `.java` extension to create a Java file (e.g., `JavaBasics.java`).
+Use the `.java` extension to create a Java file (e.g., `Variables.java`).
 
 ### Boilerplate Code
-Every Java program must have a class definition and a `main` method.
+Every Java program must have a class definition and a `main` method. If the file is inside a folder, it should also have a `package` declaration.
 
 ```java
-public class JavaBasics {
+package Variables; // Name of the folder
+
+public class Variables { // Name of the file
     public static void main(String args[]) {
         // Your code starts here
     }
@@ -156,6 +158,9 @@ Java has 8 primitive data types:
 | **float** | 4 bytes | 1.4E-45 to 3.4E38 | Single-precision floating point |
 | **double** | 8 bytes | 4.9E-324 to 1.8E308 | Double-precision floating point |
 
+> [!NOTE]
+> `char` literals use single quotes (`' '`) while `String` literals use double quotes (`" "`).
+
 ### Memory Allocation Details
 **Why 8 primitive types?**
 - To manage memory efficiently.
@@ -177,7 +182,9 @@ flowchart LR
 
 ### Example: Sum of Two Numbers
 ```java
-public class JavaBasics {
+package Variables;
+
+public class Variables {
     public static void main(String args[]) {
         int a = 10;
         int b = 20;
@@ -205,9 +212,10 @@ This is a multi-line comment
 Input is handled using the `Scanner` class from the `java.util` package.
 
 ```java
+package Variables;
 import java.util.Scanner;
 
-public class JavaBasics {
+public class Variables {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
@@ -236,7 +244,7 @@ The `Scanner` class provides several methods:
 #### Sum of Two Numbers
 ```java
 import java.util.Scanner;
-public class JavaBasics {
+public class Variables {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
@@ -250,7 +258,7 @@ public class JavaBasics {
 #### Product of Two Numbers
 ```java
 import java.util.Scanner;
-public class JavaBasics {
+public class Variables {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
@@ -264,7 +272,7 @@ public class JavaBasics {
 #### Area of Circle
 ```java
 import java.util.Scanner;
-public class JavaBasics {
+public class Variables {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         float r = sc.nextFloat();
@@ -294,7 +302,7 @@ When you want to convert a larger type to a smaller type, you must explicitly ca
 - It will truncate decimal values (not round them).
 
 ```java
-public class JavaBasics {
+public class Variables {
     public static void main(String args[]) {
         double d = 10.5;
         int i = (int) d; // explicit conversion: result will be 10
@@ -308,7 +316,7 @@ public class JavaBasics {
 - If one operand is `long`, `float`, or `double`, the entire expression is promoted to that type respectively.
 
 ```java
-public class JavaBasics {
+public class Variables {
     public static void main(String args[]) {
         byte b = 10;
         // b = b + 10; // Error: lossy conversion from int to byte
