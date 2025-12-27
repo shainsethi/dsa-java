@@ -8,8 +8,8 @@ public class SolutionOne {
         Scanner sc = new Scanner(System.in);
         int number = sc.nextInt();
 
-        String Type = (number > 0) ? "Positive" : "Negative";
-        System.out.print(Type);
+        String type = (number == 0) ? "Zero" : (number > 0 ? "Positive" : "Negative");
+        System.out.println(type);
     }
 
 }

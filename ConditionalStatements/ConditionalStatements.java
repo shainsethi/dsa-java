@@ -13,12 +13,11 @@ public class ConditionalStatements {
         int b = sc.nextInt();
 
         if (a > b) {
-            System.out.println("A is greater then B");
-        }
-        if (a == b) {
+            System.out.println("A is greater than B");
+        } else if (a == b) {
             System.out.println("A is equal to B");
         } else {
-            System.out.println("B is greater then A");
+            System.out.println("B is greater than A");
         }
 
         // Print even or odd number
@@ -35,16 +34,16 @@ public class ConditionalStatements {
         int a1 = 1;
         int b1 = 3;
         if (a1 > b1) {
-            System.out.println("A is greater then B");
+            System.out.println("A is greater than B");
         } else if (a1 == b1) {
             System.out.println("A is equal to B");
         } else {
-            System.out.println("B is greater then A");
+            System.out.println("B is greater than A");
         }
 
         // Income Tax Calculator
         int income = sc.nextInt();
-        int tax; // java automatically assings 0 or "" if we define a char
+        int tax; // Java automatically assigns 0 or "" if we define a char
 
         if (income <= 500000) {
             tax = 0;

@@ -157,7 +157,7 @@ switch (Operator) {
 
 ## Practice Questions
 
-1. **Positive or Negative**: Write a program to get a number from the user and print whether it is positive or negative.
+1. **Positive, Negative, or Zero**: Write a program to get a number from the user and print whether it is positive, negative, or zero.
    - [Solution](./Solutions/SolutionOne.java)
 2. **Fever Check**: Finish the code to check if you have a fever (temperature > 100).
    - [Solution](./Solutions/SolutionTwo.java)
