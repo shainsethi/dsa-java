@@ -54,9 +54,9 @@ if (a > b) {
 ```java
 int n = sc.nextInt();
 if (n % 2 == 0) {
-    System.out.println(n + " is an Even Number");
+    System.out.println(n + " is an even number");
 } else {
-    System.out.println(n + " is an Odd Number");
+    System.out.println(n + " is an odd number");
 }
 ```
 

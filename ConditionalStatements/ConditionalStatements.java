@@ -25,9 +25,9 @@ public class ConditionalStatements {
         int n = sc.nextInt();
 
         if (n % 2 == 0) {
-            System.out.println(n + " is a even Number");
+            System.out.println(n + " is an even number");
         } else {
-            System.out.print(n + " is odd number");
+            System.out.println(n + " is an odd number");
         }
 
         // else-if statement
@@ -77,19 +77,19 @@ public class ConditionalStatements {
 
         switch (Operator) {
             case '+':
-                System.out.println("Sum is" + (Number1 + Number2));
+                System.out.println("Sum is " + (Number1 + Number2));
                 break;
             case '-':
-                System.out.println("Sub is" + (Number1 - Number2));
+                System.out.println("Sub is " + (Number1 - Number2));
                 break;
             case '*':
-                System.out.println("Product is" + (Number1 * Number2));
+                System.out.println("Product is " + (Number1 * Number2));
                 break;
             case '/':
-                System.out.println("Quotient is" + (Number1 / Number2));
+                System.out.println("Quotient is " + (Number1 / Number2));
                 break;
             case '%':
-                System.out.println("Remainder is" + (Number1 % Number2));
+                System.out.println("Remainder is " + (Number1 % Number2));
                 break;
             default:
                 System.out.println("Invalid Operator");
