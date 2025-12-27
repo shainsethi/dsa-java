@@ -159,7 +159,7 @@ Java has 8 primitive data types:
 | **double** | 8 bytes | 4.9E-324 to 1.8E308 | Double-precision floating point |
 
 > [!NOTE]
-> char uses single quote '' while String uses double quote ""
+> `char` literals use single quotes (`' '`) while `String` literals use double quotes (`" "`).
 
 ### Memory Allocation Details
 **Why 8 primitive types?**

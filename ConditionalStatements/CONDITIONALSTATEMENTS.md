@@ -163,5 +163,16 @@ switch (Operator) {
    - [Solution](./Solutions/SolutionTwo.java)
 3. **Week Days**: Write a program to input a week number (1-7) and print the day of the week using a switch statement.
    - [Solution](./Solutions/SolutionThree.java)
-4. **Leap Year**: Write a program that takes a year from the user and prints whether it is a leap year or not.
+4. **Ternary Operator Analysis**: What will be the value of `x` & `y` in the following program?
+   ```java
+   public class Solution {
+       public static void main(String args[]) {
+           int a = 63, b = 36;
+           boolean x = (a < b) ? true : false;
+           int y = (a > b) ? a : b;
+       }
+   }
+   ```
+   **Answer:** `x = false`, `y = 63`.
+5. **Leap Year**: Write a program that takes a year from the user and prints whether it is a leap year or not.
    - [Solution](./Solutions/SolutionFive.java)
