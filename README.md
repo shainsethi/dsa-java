@@ -30,5 +30,12 @@ Understand symbols and expressions that manipulate variables and logic.
 - **Core Code**: [Operators.java](./Operators/Operators.java)
 - **Practice Solutions**: [Java Solutions](./Operators/SOLUTIONS.md)
 
+### Module 3: Conditional Statements
+Master the control flow of Java applications using `if-else`, `switch`, and ternary operators.
+
+- **Main Guide**: [Conditional Statements Concepts](./ConditionalStatements/CONDITIONALSTATEMENTS.md)
+- **Core Code**: [ConditionalStatements.java](./ConditionalStatements/ConditionalStatements.java)
+- **Practice Solutions**: [Java Solutions](./ConditionalStatements/Solutions/)
+
 ---
 *Happy Coding!* 🚀
