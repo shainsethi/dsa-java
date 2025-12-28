@@ -8,8 +8,8 @@ public class PrimeNumber {
         int number = sc.nextInt();
         boolean isPrime = true;
 
-        if (number == 2) {
-            System.out.println("Prime Number");
+        if (number <= 1) {
+            isPrime = false;
         } else {
             for (int i = 2; i <= Math.sqrt(number); i++) {
                 if (number % i == 0) {
