@@ -37,5 +37,12 @@ Master the control flow of Java applications using `if-else`, `switch`, and tern
 - **Core Code**: [ConditionalStatements.java](./ConditionalStatements/ConditionalStatements.java)
 - **Practice Solutions**: [Java Solutions](./ConditionalStatements/Solutions/)
 
+### Module 4: Loops
+Master the repetition of code blocks using `while`, `for`, and `do-while` loops, along with loop control statements.
+
+- **Main Guide**: [Loops Concepts](./Loops/LOOPS.md)
+- **Core Code**: [Loops.java](./Loops/Loops.java) | [Prime Checker](./Loops/PrimeNumber.java)
+- **Practice Solutions**: [Java Solutions](./Loops/Solutions/)
+
 ---
 *Happy Coding!* 🚀
