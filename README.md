@@ -44,5 +44,11 @@ Master the repetition of code blocks using `while`, `for`, and `do-while` loops,
 - **Core Code**: [Loops.java](./Loops/Loops.java) | [Prime Checker](./Loops/PrimeNumber.java)
 - **Practice Solutions**: [Java Solutions](./Loops/Solutions/)
 
+### Module 5: Patterns
+Learn how to use nested loops to print various geometric and numerical shapes. This is a crucial step for logic building.
+
+- **Main Guide**: [Patterns Concepts](./Patterns/PATTERNS.md)
+- **Core Code**: [Star Pattern](./Patterns/StarPattern.java) | [Inverted Star](./Patterns/InvertedStarPattern.java) | [Half Pyramid](./Patterns/HalfPyramidPattern.java) | [Character Pattern](./Patterns/CharacterPattern.java)
+
 ---
 *Happy Coding!* 🚀
