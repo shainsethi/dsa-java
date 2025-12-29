@@ -10,5 +10,15 @@ public class InvertedStarPattern {
             System.out.println("");
         }
 
+        // Another method
+        int n = 5;
+
+        for (int l = 1; l < n; l++) {
+            for (int star = 1; star < (n - l + 1); star++) {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
     }
+
 }
