@@ -50,5 +50,11 @@ Learn how to use nested loops to print various geometric and numerical shapes. T
 - **Main Guide**: [Patterns Concepts](./Patterns/PATTERNS.md)
 - **Core Code**: [Star Pattern](./Patterns/StarPattern.java) | [Inverted Star](./Patterns/InvertedStarPattern.java) | [Half Pyramid](./Patterns/HalfPyramidPattern.java) | [Character Pattern](./Patterns/CharacterPattern.java)
 
+### Module 6: Functions
+Understand how to modularize your code using methods, parameters, and return types.
+
+- **Main Guide**: [Functions Concepts](./Functions/FUNCTIONS.md)
+- **Core Code**: [Functions.java](./Functions/Functions.java)
+
 ---
 *Happy Coding!* 🚀
