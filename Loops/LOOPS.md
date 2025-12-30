@@ -1,22 +1,42 @@
 # Loops
-we use loops to repeat a block of code multiple times and we know till when to repeat it
+
+We use loops to repeat a block of code multiple times when we know the condition for how long to repeat it.
+
+## Table of Contents
+- [Types of Loops](#types-of-loops)
+- [While Loop](#while-loop)
+- [For Loop](#for-loop)
+- [Do-While Loop](#do-while-loop)
+- [Loop Control Statements](#loop-control-statements)
+  - [break](#break)
+  - [continue](#continue)
+- [Practice Questions](#practice-questions)
+
+---
 
 ## Types of Loops
-1. For Loop
-2. While Loop
-3. Do While Loop
 
-# while loop
+1.  **For Loop**: Best when the number of iterations is known.
+2.  **While Loop**: Best when the condition is evaluated before each iteration.
+3.  **Do-While Loop**: Best when the loop body should execute at least once.
+
+---
+
+## While Loop
+
+The `while` loop repeats a block of code as long as the condition is true.
 
 ```java
 while (condition) {
-    // code
+    // code to be executed
 }
 ```
-> [!NOTE]
-> if we give a condition which is always true then it will go into infinite loop untill the memory is full. care we should not give a condition which is always true
 
-### PRINT NUMBERS FROM 1 TO 10
+> [!NOTE]
+> If the condition is always `true`, the loop will run infinitely until memory is exhausted. Always ensure the loop has an exit condition!
+
+### Example: Print Numbers from 1 to 10
+
 ```java
 int number = 1;
 while (number <= 10) {
@@ -24,9 +44,11 @@ while (number <= 10) {
     number++;
 }
 ```
-### PRINT NUMBERS FROM 1 TO N
+
+### Example: Print Numbers from 1 to N
+
 ```java
-n = sc.nextInt();
+int n = sc.nextInt();
 int number = 1;
 while (number <= n) {
     System.out.println(number);
@@ -34,7 +56,8 @@ while (number <= n) {
 }
 ```
 
-### SUM OF FIRST N NATURAL NUMBERS
+### Example: Sum of First N Natural Numbers
+
 ```java
 int range = sc.nextInt();
 int c = 1;
@@ -46,26 +69,8 @@ while (c <= range) {
 System.out.print(sum);
 ```
 
-### FOR loop
+### Example: Print Digits of a Number in Reverse
 
-```
-for(initialization; condition ; updation){
-    // code
-}
-```
-for loops combines 3 statements into one line and thats why we use statement terminator between them .
-+ initialization is basically our iterator and for loop only read its once in starting 
-+ condition is the same as while loop basically till when loop will run
-+ updation is how iterator will change after each iteration
-
-### Print pattern
-```java
-   for (int j = 0; j < 4; j++) {
-            System.out.println("****");
-        }
-```
-
-#### print reverse of a number
 ```java
 int numberToBeReversed = 10899;
 
@@ -76,7 +81,8 @@ while (numberToBeReversed > 0) {
 }
 ```
 
-#### reverse the given number
+### Example: Reverse a Number
+
 ```java
 int no = 12345;
 int rev = 0;
@@ -87,11 +93,48 @@ while (no > 0) {
     no = no / 10;
 }
 
-System.out.println(rev);
+System.out.println(rev); // Output: 54321
 ```
 
-#### do while loop
-do while loop first run the code then check the condition 
+---
+
+## For Loop
+
+The `for` loop combines initialization, condition, and update into a single line.
+
+```java
+for (initialization; condition; update) {
+    // code to be executed
+}
+```
+
+| Part | Description |
+| :--- | :--- |
+| **Initialization** | Runs once at the start. Typically used to declare the loop counter. |
+| **Condition** | Evaluated before each iteration. Loop continues if `true`. |
+| **Update** | Runs after each iteration. Typically used to increment/decrement the counter. |
+
+### Example: Print a Simple Pattern
+
+```java
+for (int j = 0; j < 4; j++) {
+    System.out.println("****");
+}
+```
+
+---
+
+## Do-While Loop
+
+The `do-while` loop executes the code block **at least once** before checking the condition.
+
+```java
+do {
+    // code to be executed
+} while (condition);
+```
+
+### Example: Print Numbers from 1 to 10
 
 ```java
 int counter = 1;
@@ -101,40 +144,44 @@ do {
 } while (counter <= 10);
 ```
 
-#### break 
-break is used to exit the loop . it will even exit an infinite loop.
+---
+
+## Loop Control Statements
+
+### break
+
+The `break` statement is used to exit a loop immediately.
 
 ```java
 do {
     int n = sc.nextInt();
     if (n % 10 == 0) {
-        break;
+        break; // Exit the loop if n is a multiple of 10
     }
     System.out.println(n);
 } while (true);
 ```
 
-#### continue 
-continue is used to skip the current iteration and move to the next iteration.
+### continue
+
+The `continue` statement skips the current iteration and moves to the next one.
 
 ```java
 for (int i = 0; i < 5; i++) {
     if (i == 3) {
-        continue;
+        continue; // Skip printing when i is 3
     }
-    System.out.println(i);
+    System.out.println(i); // Output: 0, 1, 2, 4
 }
 ```
-
-#### number is prime 
-check prime number java 
 
 ---
 
 ## Practice Questions
 
 ### Question 1
-How many times 'Hello' is printed?
+
+How many times is 'Hello' printed?
 
 ```java
 public class Solution {
@@ -151,13 +198,14 @@ public class Solution {
 > **Answer: 2 times**
 >
 > **Reasoning:**
-> 1. Initially `i = 0`. Since `0 < 5`, "Hello" is printed. Then `i` becomes `2` (`i += 2`), and the loop increment `i++` makes `i = 3`.
-> 2. Now `i = 3`. Since `3 < 5`, "Hello" is printed. Then `i` becomes `5` (`i += 2`), and the loop increment `i++` makes `i = 6`.
-> 3. Now `i = 6`. Since `6` is not `< 5`, the loop terminates.
+> 1.  `i = 0`: Print "Hello", `i` becomes `2` (`i += 2`), then `3` (`i++`).
+> 2.  `i = 3`: Print "Hello", `i` becomes `5` (`i += 2`), then `6` (`i++`).
+> 3.  `i = 6`: Condition `6 < 5` is false. Loop terminates.
 
 ---
 
 ### Question 2
+
 Write a program that reads a set of integers, and then prints the sum of the even and odd integers.
 
 > [!NOTE]
@@ -166,6 +214,7 @@ Write a program that reads a set of integers, and then prints the sum of the eve
 ---
 
 ### Question 3
+
 Write a program to find the factorial of any number entered by the user.
 
 > [!NOTE]
@@ -174,6 +223,7 @@ Write a program to find the factorial of any number entered by the user.
 ---
 
 ### Question 4
+
 Write a program to print the multiplication table of a number N, entered by the user.
 
 > [!NOTE]
@@ -182,6 +232,7 @@ Write a program to print the multiplication table of a number N, entered by the 
 ---
 
 ### Question 5
+
 What is wrong in the following program?
 
 ```java
@@ -199,5 +250,4 @@ public class Solution {
 > **Answer: Compiler Error**
 >
 > **Reasoning:**
-> The variable `i` is declared inside the `for` loop's initialization. Its **scope** is limited to the loop itself. When you try to print it on the last line, it is no longer available, leading to a "cannot find symbol" error.
-
+> The variable `i` is declared inside the `for` loop's initialization. Its **scope** is limited to the loop block. When you try to access it after the loop, the compiler throws a "cannot find symbol" error.
