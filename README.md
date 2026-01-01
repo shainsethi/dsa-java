@@ -57,5 +57,11 @@ Understand how to modularize your code using methods, parameters, and return typ
 - **Core Code**: [Functions.java](./Functions/Functions.java) | [Prime Checker](./Functions/Prime.java) | [Binary/Decimal Conversion](./Functions/Conversion.java)
 - **Practice Solutions**: [Java Solutions](./Functions/Solutions/)
 
+### Module 7: Advanced Patterns
+Master complex pattern printing using nested loops and conditional logic. Learn to build hollow shapes, inverted pyramids, and more.
+
+- **Main Guide**: [Advanced Patterns Concepts](./PatternsAdvance/PATTERNSADVANCE.md)
+- **Core Code**: [PatternsAdvance.java](./PatternsAdvance/PatternsAdvance.java)
+
 ---
 *Happy Coding!* 🚀
