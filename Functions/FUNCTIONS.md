@@ -291,10 +291,10 @@ public class Calculator {
     }
 }
 ```
-### Exanple : Prime Number
+### Example: Prime Number
 ([Prime.java](./Prime.java))
 
-### Exanple : Prime Number in Range
+### Example: Prime Number in Range
 ([Prime.java](./Prime.java))
 
 ---
