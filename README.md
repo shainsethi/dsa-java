@@ -51,10 +51,11 @@ Learn how to use nested loops to print various geometric and numerical shapes. T
 - **Core Code**: [Star Pattern](./Patterns/StarPattern.java) | [Inverted Star](./Patterns/InvertedStarPattern.java) | [Half Pyramid](./Patterns/HalfPyramidPattern.java) | [Character Pattern](./Patterns/CharacterPattern.java)
 
 ### Module 6: Functions
-Understand how to modularize your code using methods, parameters, and return types.
+Understand how to modularize your code using methods, parameters, and return types. Includes binary/decimal conversion, scope concepts, and function overloading.
 
 - **Main Guide**: [Functions Concepts](./Functions/FUNCTIONS.md)
-- **Core Code**: [Functions.java](./Functions/Functions.java)
+- **Core Code**: [Functions.java](./Functions/Functions.java) | [Prime Checker](./Functions/Prime.java) | [Binary/Decimal Conversion](./Functions/Conversion.java)
+- **Practice Solutions**: [Java Solutions](./Functions/Solutions/)
 
 ---
 *Happy Coding!* 🚀

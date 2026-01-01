@@ -10,6 +10,11 @@ A **Function** is a block of code designed to perform a particular task. It allo
 - [Parameters vs Arguments](#parameters-vs-arguments)
 - [Memory & Call Stack](#memory--call-stack)
 - [Call by Value](#call-by-value)
+- [More Examples](#more-examples)
+- [Types of Functions](#types-of-functions)
+- [Function Overloading](#function-overloading)
+- [Scope of Variables](#scope-of-variables)
+- [Practice Questions](#practice-questions)
 
 ---
 
@@ -264,12 +269,12 @@ public class Calculator {
     }
 
     // Three integers
-    public static int multiply(int a, int b, int c) {
+    public static int multiply(int a, int b, int c) { // Overloading by Parameters
         return a * b * c;
     }
 
     // Two doubles
-    public static double multiply(double a, double b) {
+    public static double multiply(double a, double b) { // Overloading by Data Type
         return a * b;
     }
 
@@ -286,3 +291,167 @@ public class Calculator {
     }
 }
 ```
+### Example: Prime Number
+([Prime.java](./Prime.java))
+
+### Example: Prime Number in Range
+([Prime.java](./Prime.java))
+
+---
+
+## Binary & Decimal Conversion
+
+### What are Decimal Numbers?
+Decimal numbers use digits **0-9** (10 unique digits). This is the standard number system used in mathematics.
+
+### What are Binary Numbers?
+Binary numbers use only **0 and 1** (2 digits). This is the number system used by computers/machines.
+
+### Binary to Decimal Conversion
+
+**Steps:**
+1. Extract the last digit of the binary number
+2. Multiply it with `2^position` (position starts from 0, right to left)
+3. Sum up all the values
+
+**Example:** Convert `101` to decimal
+
+| Position | Digit | Calculation | Value |
+|----------|-------|-------------|-------|
+| 2        | 1     | 1 × 2² = 1 × 4 | 4 |
+| 1        | 0     | 0 × 2¹ = 0 × 2 | 0 |
+| 0        | 1     | 1 × 2⁰ = 1 × 1 | 1 |
+| **Total** | | | **5** |
+
+### Decimal to Binary Conversion
+
+**Steps:**
+1. Get the remainder when divided by 2
+2. Shift the remainder left by multiplying with 10
+3. Repeat until the number becomes 0
+
+📝 [**See Full Code**](./Conversion.java)
+
+---
+
+## Scope of Variables
+
+| Scope Type | Description |
+|------------|-------------|
+| **Method Scope** | Variables declared inside a method are only accessible within that method |
+| **Block Scope** | Variables declared inside a block `{}` are only accessible within that block |
+
+### Think in Terms of "Levels"
+
+| Level | Role | Characteristics |
+|-------|------|-----------------|
+| 🔹 **Method** | Main Container | Creates stack frame, controls execution, manages parameter/variable lifetime |
+| 🔹 **Block** | Sub-Container | Exists inside method, no new stack frame, only limits visibility |
+
+---
+
+## Practice Questions
+
+### Question 1: Average of Three Numbers
+Write a Java method to compute the average of three numbers.
+
+📝 [**Solution**](./Solutions/SolutionOne.java)
+
+---
+
+### Question 2: Check Even Number
+Write a method named `isEven` that accepts an int argument. The method should return `true` if the argument is even, or `false` otherwise. Also write a program to test your method.
+
+📝 [**Solution**](./Solutions/SolutionTwo.java)
+
+---
+
+### Question 3: Palindrome Number
+Write a Java program to check if a number is a palindrome in Java. (121 is a palindrome, 321 is not)
+
+> A number is called a palindrome if the number is equal to the reverse of a number. For example, 121 is a palindrome because the reverse of 121 is 121 itself. On the other hand, 321 is not a palindrome because the reverse of 321 is 123, which is not equal to 321.
+
+📝 [**Solution**](./Solutions/SolutionThree.java)
+
+---
+
+### Question 4: Math Class Methods (Read & Code Exercise)
+Search about (Google) & use the following methods of the Math class in Java:
+
+| Method | Description |
+|--------|-------------|
+| `Math.min()` | Returns the smaller of two values |
+| `Math.max()` | Returns the larger of two values |
+| `Math.sqrt()` | Returns the square root of a number |
+| `Math.pow()` | Returns base raised to the power of exponent |
+| `Math.avg()` | ⚠️ Does NOT exist in Java! |
+| `Math.abs()` | Returns the absolute (positive) value |
+
+📚 **Free reading resource**: [Java Math - Javatpoint](https://www.javatpoint.com/java-math)
+
+<details>
+<summary>📝 <strong>Click to view Solution</strong></summary>
+
+```java
+package Functions.Solutions;
+
+/**
+ * Solution for Question 4: Math Class Methods
+ * Resource: https://www.javatpoint.com/java-math
+ */
+public class SolutionFour {
+
+    public static void main(String[] args) {
+        
+        // --- a. Math.min() ---
+        System.out.println("=== Math.min() ===");
+        System.out.println("min(10, 20) = " + Math.min(10, 20));       // Output: 10
+        System.out.println("min(-5, -10) = " + Math.min(-5, -10));     // Output: -10
+
+        // --- b. Math.max() ---
+        System.out.println("=== Math.max() ===");
+        System.out.println("max(10, 20) = " + Math.max(10, 20));       // Output: 20
+        System.out.println("max(-5, -10) = " + Math.max(-5, -10));     // Output: -5
+
+        // --- c. Math.sqrt() ---
+        System.out.println("=== Math.sqrt() ===");
+        System.out.println("sqrt(16) = " + Math.sqrt(16));             // Output: 4.0
+        System.out.println("sqrt(25) = " + Math.sqrt(25));             // Output: 5.0
+
+        // --- d. Math.pow() ---
+        System.out.println("=== Math.pow() ===");
+        System.out.println("pow(2, 3) = " + Math.pow(2, 3));           // Output: 8.0
+        System.out.println("pow(5, 2) = " + Math.pow(5, 2));           // Output: 25.0
+
+        // --- e. Math.avg() ---
+        // NOTE: There is NO Math.avg() method in Java!
+        System.out.println("=== Average (Custom - no Math.avg() exists) ===");
+        int a = 10, b = 20, c = 30;
+        double average = (a + b + c) / 3.0;
+        System.out.println("Average of 10, 20, 30 = " + average);      // Output: 20.0
+
+        // --- f. Math.abs() ---
+        System.out.println("=== Math.abs() ===");
+        System.out.println("abs(-10) = " + Math.abs(-10));             // Output: 10
+        System.out.println("abs(-3.14) = " + Math.abs(-3.14));         // Output: 3.14
+    }
+}
+```
+
+</details>
+
+📝 [**View Full Solution File**](./Solutions/SolutionFour.java)
+
+---
+
+### Question 5: Sum of Digits
+Write a Java method to compute the sum of the digits in an integer.
+
+> **Hint:** Approach this question in the following way:
+> 1. Take a variable `sum = 0`
+> 2. Find the last digit of the number
+> 3. Add it to the sum
+> 4. Repeat steps 2 & 3 until the number becomes 0
+
+📝 [**Solution**](./Solutions/SolutionFive.java)
+
