@@ -63,5 +63,11 @@ Master complex pattern printing using nested loops and conditional logic. Learn 
 - **Main Guide**: [Advanced Patterns Concepts](./PatternsAdvance/PATTERNSADVANCE.md)
 - **Core Code**: [PatternsAdvance.java](./PatternsAdvance/PatternsAdvance.java)
 
+### Module 8: Arrays
+Master the first data structure: contiguous memory allocation, zero-based indexing, and basic array operations.
+
+- **Main Guide**: [Arrays Concepts](./Arrays/ARRAYS.md)
+
 ---
+
 *Happy Coding!* 🚀
