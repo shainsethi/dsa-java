@@ -141,3 +141,25 @@ flowchart TD
 
 > [!IMPORTANT]
 > `x` and `arr` are distinct variables in the stack, but they initially point to the same object in the heap.
+
+// Linear search means we search line by line 
+
++ (Linear search)[./PartOne/LinearSearch.java]
+
++ (Largest Number)[./PartOne/LargestNumber.java]
+
+
+// Binary search
+
+Binary Search is like dictionary search. we search in the middle and then move to the left or right based on the comparison.
+
+// ARRAY must be sorted to perform binary search
+
++ first we find the middle element
++ then we compare the middle element with the key
++ if the middle element is greater than the key, we search in the left half by updating the end index
++ if the middle element is less than the key, we search in the right half by updating the start index
++ if the middle element is equal to the key, we return the index
++ (Binary Search)[./PartOne/BinarySearch.java]
+
+
