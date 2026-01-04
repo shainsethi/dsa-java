@@ -67,6 +67,7 @@ Master complex pattern printing using nested loops and conditional logic. Learn 
 Master the first data structure: contiguous memory allocation, zero-based indexing, and basic array operations.
 
 - **Main Guide**: [Arrays Concepts](./Arrays/ARRAYS.md)
+- **Core Code**: [ArraysCC.java](./Arrays/ArraysCC.java)
 
 ---
 
