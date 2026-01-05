@@ -7,7 +7,11 @@ An **Array** is a collection of elements of the same data type placed in a **con
 - [Key Characteristics](#key-characteristics)
 - [Memory Representation](#memory-representation)
 - [Array Creation](#array-creation)
-- [Passing Arrays to Functions (Pass by Value)](#passing-arrays-to-functions-pass-by-value)
+- [Linear Search](#linear-search)
+- [Binary Search](#binary-search)
+- [Reverse an Array](#reverse-an-array)
+- [Pairs in an Array](#pairs-in-an-array)
+- [Print Subarrays](#print-subarrays)
 
 ---
 
@@ -141,3 +145,80 @@ flowchart TD
 
 > [!IMPORTANT]
 > `x` and `arr` are distinct variables in the stack, but they initially point to the same object in the heap.
+
+---
+
+## Linear Search
+
+Linear search is the simplest search algorithm. It searches for an element by visiting each index one by one.
+
+- **Code**: [LinearSearch.java](./PartOne/LinearSearch.java) | [LargestNumber.java](./PartOne/LargestNumber.java)
+- **Time Complexity**: $O(n)$
+
+
+---
+
+## Binary Search
+
+Binary Search is a much faster search algorithm that works on the **divide and conquer** principle.
+
+> [!IMPORTANT]
+> The array **must be sorted** to perform binary search.
+
+### Steps
+1. Find the middle element.
+2. Compare the middle element with the key.
+3. If `mid == key`, return index.
+4. If `mid > key`, search in the left half (update `end = mid - 1`).
+5. If `mid < key`, search in the right half (update `start = mid + 1`).
+
+- **Code**: [BinarySearch.java](./PartOne/BinarySearch.java)
+- **Time Complexity**: $O(\log n)$
+
+---
+
+## Reverse an Array
+
+Reversing an array means swapping elements from both ends moving towards the center.
+
+### Algorithm (Two-Pointer Approach)
+1. Initialize `first = 0` and `last = n-1`.
+2. Swap `arr[first]` and `arr[last]`.
+3. Increment `first` and decrement `last`.
+4. Repeat until `first < last` is false.
+
+- **Code**: [Reverse.java](./PartOne/Reverse.java)
+- **Time Complexity**: $O(n)$
+- **Space Complexity**: $O(1)$
+
+---
+
+## Pairs in an Array
+
+Printing every possible unique pair of elements in the array.
+
+### Visualization
+For `arr = [2, 4, 6]`, pairs are:
+`(2,4), (2,6), (4,6)`
+
+- **Code**: [ArrayPairs.java](./PartOne/ArrayPairs.java)
+- **Total Pairs**: $\frac{n(n-1)}{2}$
+- **Time Complexity**: $O(n^2)$
+
+---
+
+## Print Subarrays
+
+A subarray is a contiguous part of an array.
+
+### Visualization
+For `arr = [2, 4, 6]`:
+`[2], [2,4], [2,4,6]`
+`[4], [4,6]`
+`[6]`
+
+- **Code**: [SubArray.java](./PartOne/SubArray.java)
+- **Total Subarrays**: $\frac{n(n+1)}{2}$
+- **Time Complexity**: $O(n^3)$
+
+
