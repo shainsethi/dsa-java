@@ -64,10 +64,10 @@ Master complex pattern printing using nested loops and conditional logic. Learn 
 - **Core Code**: [PatternsAdvance.java](./PatternsAdvance/PatternsAdvance.java)
 
 ### Module 8: Arrays
-Master the first data structure: contiguous memory allocation, zero-based indexing, and basic array operations.
+Master the first data structure: contiguous memory allocation, zero-based indexing, and basic array operations. Includes search algorithms, reversing arrays, and subarray logic.
 
 - **Main Guide**: [Arrays Concepts](./Arrays/ARRAYS.md)
-- **Core Code**: [ArraysCC.java](./Arrays/ArraysCC.java)
+- **Core Code**: [ArraysCC.java](./Arrays/ArraysCC.java) | [Search Algorithms](./Arrays/PartOne/) | [Array Operations](./Arrays/PartOne/)
 
 ---
 

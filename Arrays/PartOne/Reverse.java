@@ -11,7 +11,7 @@ public class Reverse {
             arr[last] = temp;
 
             first++;
-            last++;
+            last--;
         }
     }
 

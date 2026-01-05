@@ -7,7 +7,11 @@ An **Array** is a collection of elements of the same data type placed in a **con
 - [Key Characteristics](#key-characteristics)
 - [Memory Representation](#memory-representation)
 - [Array Creation](#array-creation)
-- [Passing Arrays to Functions (Pass by Value)](#passing-arrays-to-functions-pass-by-value)
+- [Linear Search](#linear-search)
+- [Binary Search](#binary-search)
+- [Reverse an Array](#reverse-an-array)
+- [Pairs in an Array](#pairs-in-an-array)
+- [Print Subarrays](#print-subarrays)
 
 ---
 
@@ -142,24 +146,79 @@ flowchart TD
 > [!IMPORTANT]
 > `x` and `arr` are distinct variables in the stack, but they initially point to the same object in the heap.
 
-// Linear search means we search line by line 
+---
 
-+ (Linear search)[./PartOne/LinearSearch.java]
+## Linear Search
 
-+ (Largest Number)[./PartOne/LargestNumber.java]
+Linear search is the simplest search algorithm. It searches for an element by visiting each index one by one.
+
+- **Code**: [LinearSearch.java](./PartOne/LinearSearch.java) | [LargestNumber.java](./PartOne/LargestNumber.java)
+- **Time Complexity**: $O(n)$
 
 
-// Binary search
+---
 
-Binary Search is like dictionary search. we search in the middle and then move to the left or right based on the comparison.
+## Binary Search
 
-// ARRAY must be sorted to perform binary search
+Binary Search is a much faster search algorithm that works on the **divide and conquer** principle.
 
-+ first we find the middle element
-+ then we compare the middle element with the key
-+ if the middle element is greater than the key, we search in the left half by updating the end index
-+ if the middle element is less than the key, we search in the right half by updating the start index
-+ if the middle element is equal to the key, we return the index
-+ (Binary Search)[./PartOne/BinarySearch.java]
+> [!IMPORTANT]
+> The array **must be sorted** to perform binary search.
+
+### Steps
+1. Find the middle element.
+2. Compare the middle element with the key.
+3. If `mid == key`, return index.
+4. If `mid > key`, search in the left half (update `end = mid - 1`).
+5. If `mid < key`, search in the right half (update `start = mid + 1`).
+
+- **Code**: [BinarySearch.java](./PartOne/BinarySearch.java)
+- **Time Complexity**: $O(\log n)$
+
+---
+
+## Reverse an Array
+
+Reversing an array means swapping elements from both ends moving towards the center.
+
+### Algorithm (Two-Pointer Approach)
+1. Initialize `first = 0` and `last = n-1`.
+2. Swap `arr[first]` and `arr[last]`.
+3. Increment `first` and decrement `last`.
+4. Repeat until `first < last` is false.
+
+- **Code**: [Reverse.java](./PartOne/Reverse.java)
+- **Time Complexity**: $O(n)$
+- **Space Complexity**: $O(1)$
+
+---
+
+## Pairs in an Array
+
+Printing every possible unique pair of elements in the array.
+
+### Visualization
+For `arr = [2, 4, 6]`, pairs are:
+`(2,4), (2,6), (4,6)`
+
+- **Code**: [ArrayPairs.java](./PartOne/ArrayPairs.java)
+- **Total Pairs**: $\frac{n(n-1)}{2}$
+- **Time Complexity**: $O(n^2)$
+
+---
+
+## Print Subarrays
+
+A subarray is a contiguous part of an array.
+
+### Visualization
+For `arr = [2, 4, 6]`:
+`[2], [2,4], [2,4,6]`
+`[4], [4,6]`
+`[6]`
+
+- **Code**: [SubArray.java](./PartOne/SubArray.java)
+- **Total Subarrays**: $\frac{n(n+1)}{2}$
+- **Time Complexity**: $O(n^3)$
 
 
