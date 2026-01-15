@@ -67,7 +67,9 @@ Master complex pattern printing using nested loops and conditional logic. Learn 
 Master the first data structure: contiguous memory allocation, zero-based indexing, and basic array operations. Includes search algorithms, reversing arrays, and subarray logic.
 
 - **Main Guide**: [Arrays Concepts](./Arrays/ARRAYS.md)
-- **Core Code**: [ArraysCC.java](./Arrays/ArraysCC.java) | [Search Algorithms](./Arrays/PartOne/) | [Array Operations](./Arrays/PartOne/)
+- **Part One (Basics)**: [Linear/Binary Search, Reverse, Pairs, Subarrays](./Arrays/PartOne/)
+- **Part Two (Advanced)**: [Max Subarray (Kadane's), Trapping Rainwater](./Arrays/PartTwo/)
+- **Core Code**: [ArraysCC.java](./Arrays/ArraysCC.java)
 
 ---
 

@@ -12,6 +12,8 @@ An **Array** is a collection of elements of the same data type placed in a **con
 - [Reverse an Array](#reverse-an-array)
 - [Pairs in an Array](#pairs-in-an-array)
 - [Print Subarrays](#print-subarrays)
+- [Max Subarray Sum](#max-subarray-sum)
+- [Trapping Rainwater](#trapping-rainwater)
 
 ---
 
@@ -146,6 +148,8 @@ flowchart TD
 > [!IMPORTANT]
 > `x` and `arr` are distinct variables in the stack, but they initially point to the same object in the heap.
 
+- **Code**: [ArraysCC.java](./ArraysCC.java)
+
 ---
 
 ## Linear Search
@@ -220,5 +224,43 @@ For `arr = [2, 4, 6]`:
 - **Code**: [SubArray.java](./PartOne/SubArray.java)
 - **Total Subarrays**: $\frac{n(n+1)}{2}$
 - **Time Complexity**: $O(n^3)$
+
+---
+
+## Max Subarray Sum
+
+Finding the maximum possible sum of a contiguous subarray.
+
+### 1. Brute Force
+Calculate the sum of every possible subarray and keep track of the maximum.
+- **Time Complexity**: $O(n^3)$
+
+### 2. Prefix Sum Approach
+Use a prefix array where `prefix[i]` stores the sum of elements from `0` to `i`. The sum of subarray `[i, j]` is `prefix[j] - prefix[i-1]`.
+- **Code**: [MaxSubarr.java](./PartTwo/MaxSubarr.java)
+- **Time Complexity**: $O(n^2)$
+
+### 3. Kadane's Algorithm
+The most efficient approach. At each step, decide whether to start a new subarray or continue with the previous one.
+- **Logic**: `currentSum = max(currentElement, currentSum + currentElement)`
+- **Code**: [kadanes.java](./PartTwo/kadanes.java)
+- **Time Complexity**: $O(n)$
+- **Space Complexity**: $O(1)$
+
+---
+
+## Trapping Rainwater
+
+Given `n` non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
+
+### Algorithm
+1.  **Left Max Boundary**: Create an auxiliary array to store the maximum height encountered from the left for each bar.
+2.  **Right Max Boundary**: Create an auxiliary array to store the maximum height encountered from the right for each bar.
+3.  **Water Level**: For each bar, the water level is `min(leftMax, rightMax)`.
+4.  **Trapped Water**: `waterLevel - barHeight`.
+
+- **Code**: [Rainwater.java](./PartTwo/Rainwater.java)
+- **Time Complexity**: $O(n)$
+- **Space Complexity**: $O(n)$
 
 
