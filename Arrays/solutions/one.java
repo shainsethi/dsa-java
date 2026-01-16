@@ -1,6 +1,6 @@
-package Arrays.solutions;
+package Arrays.Solutions;
 
-public class one {
+public class One {
 
     public static boolean isDuplicate(int n[]) {
         for (int i = 0; i < n.length; i++) {

@@ -1,8 +1,7 @@
-package Arrays.Solutions;
+package Arrays.PartTwo;
 
-public class Two {
+public class Stock {
 
     public static void main(String args[]) {
-
     }
 }
