@@ -7,11 +7,10 @@ public class Three {
         int maximumProfit = 0; // store previous value of profit
 
         for (int i = 0; i < n.length; i++) {
-            buyingprice = Math.min(buyingprice, n[i]);
-            int profit = n[i] - buyingprice;
-
-            if (maximumProfit < profit) {
-                maximumProfit = profit;
+            if (buyingprice < n[i]) {
+                maximumProfit = Math.max(n[i] - buyingprice, maximumProfit);
+            } else {
+                buyingprice = n[i];
             }
         }
 
