@@ -71,6 +71,12 @@ Master the first data structure: contiguous memory allocation, zero-based indexi
 - **Part Two (Advanced)**: [Max Subarray (Kadane's), Trapping Rainwater](./Arrays/PartTwo/)
 - **Core Code**: [ArraysCC.java](./Arrays/ArraysCC.java)
 
+### Module 9: Basic Sorting Algorithms
+Learn how to arrange data in a specific order using various algorithms. This module covers comparison-based and non-comparison sorting techniques.
+
+- **Main Guide**: [Sorting Concepts](./Sorting/SORTING.md)
+- **Algorithms**: [Bubble Sort](./Sorting/BubbleSort.java)
+
 ---
 
 *Happy Coding!* 🚀
