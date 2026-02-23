@@ -94,8 +94,8 @@ Counting Sort is a non-comparison-based sorting algorithm that works by counting
 Java provides a built-in `Arrays.sort()` method to sort arrays efficiently.
 
 ### Algorithm
-- Uses **Dual-Pivot Quicksort** for primitive types ($O(n \log n)$).
-- Uses **TimSort** for objects ($O(n \log n)$).
+- Uses **Dual-Pivot Quicksort** for primitive types ($O(n \log n)$). This is faster than traditional quicksort and avoids many worst-case scenarios.
+- Uses **TimSort** for objects ($O(n \log n)$). It is a hybrid stable sorting algorithm, derived from merge sort and insertion sort, designed to perform well on many kinds of real-world data.
 
 ### Usage
 ```java

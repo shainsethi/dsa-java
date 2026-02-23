@@ -75,7 +75,7 @@ Master the first data structure: contiguous memory allocation, zero-based indexi
 Learn how to arrange data in a specific order using various algorithms. This module covers comparison-based and non-comparison sorting techniques.
 
 - **Main Guide**: [Sorting Concepts](./Sorting/SORTING.md)
-- **Algorithms**: [Bubble Sort](./Sorting/BubbleSort.java)
+- **Algorithms**: [Bubble Sort](./Sorting/BubbleSort.java) | [Selection Sort](./Sorting/SelectionSort.java) | [Insertion Sort](./Sorting/InsertionSort.java) | [Counting Sort](./Sorting/CountingSort.java) | [Built-in Sort](./Sorting/BuiltInSort.java)
 
 ---
 
