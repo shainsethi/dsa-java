@@ -8,7 +8,7 @@ import java.util.HashSet;
 public class ProblemOne {
 
     public static void main(String[] args) {
-        int arr[] = { 1, 2, 3, 4 };
+        int arr[] = { 1, 2, 3, 4, };
         Boolean result = false;
 
         // Brute Force
