@@ -5,6 +5,7 @@ public class BS {
     public static void main(String args[]) {
 
         // Bubble Sort
+        // largest swap krke end me push krna
         int arr[] = { 3, 6, 2, 1, 8, 7, 4, 5, 3, 1 };
 
         for (int i = 0; i < arr.length - 1; i++) {
@@ -15,10 +16,6 @@ public class BS {
                     arr[j + 1] = temp;
                 }
             }
-        }
-
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
         }
 
     }
