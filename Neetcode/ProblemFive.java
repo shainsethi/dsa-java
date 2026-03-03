@@ -18,6 +18,17 @@ public class ProblemFive {
             map.put(n, map.getOrDefault(n, 0) + 1);
         }
 
+        // Integer arr[] = map.keySet().toArray(new Integer[0]);
+        // Arrays.sort(arr, (a, b) -> map.get(a) - map.get(b));
+
+        // int result[] = new int[k];
+
+        // for (int i = 0; i < result.length; i++) {
+        // result[i] = arr[i];
+        // }
+
+        // System.out.println(Arrays.toString(result));
+
         List<Integer>[] buckets = new List[nums.length + 1];
         for (int i = 0; i < buckets.length; i++) {
             buckets[i] = new ArrayList<>();
