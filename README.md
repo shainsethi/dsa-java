@@ -77,6 +77,12 @@ Learn how to arrange data in a specific order using various algorithms. This mod
 - **Main Guide**: [Sorting Concepts](./Sorting/SORTING.md)
 - **Algorithms**: [Bubble Sort](./Sorting/BubbleSort.java) | [Selection Sort](./Sorting/SelectionSort.java) | [Insertion Sort](./Sorting/InsertionSort.java) | [Counting Sort](./Sorting/CountingSort.java) | [Built-in Sort](./Sorting/BuiltInSort.java)
 
+### Module 10: 2D Arrays
+Master matrices, multi-dimensional structures, and their representation in memory. This module covers basic operations, memory layout, and common algorithms like Spiral Matrix.
+
+- **Main Guide**: [2D Arrays Concepts](./TwoDArrays/TwoDArrays.md)
+- **Core Code**: [TwoDArrays.java](./TwoDArrays/TwoDArrays.java)
+
 ---
 
 *Happy Coding!* 🚀
