@@ -69,11 +69,11 @@ flowchart LR
     B -->|index 1| R1
     B -->|index 2| R2
     
-    style A fill:#f9d0c4,stroke:#333,stroke-width:2px
-    style B fill:#d4e1f9,stroke:#333,stroke-width:2px
-    style R0 fill:#dcf9d4,stroke:#333,stroke-width:1px
-    style R1 fill:#dcf9d4,stroke:#333,stroke-width:1px
-    style R2 fill:#dcf9d4,stroke:#333,stroke-width:1px
+    style A fill:#f9d0c4,stroke:#333,stroke-width:2px,color:#000
+    style B fill:#d4e1f9,stroke:#333,stroke-width:2px,color:#000
+    style R0 fill:#dcf9d4,stroke:#333,stroke-width:1px,color:#000
+    style R1 fill:#dcf9d4,stroke:#333,stroke-width:1px,color:#000
+    style R2 fill:#dcf9d4,stroke:#333,stroke-width:1px,color:#000
 ```
 
 ## Spiral Matrix Pattern
