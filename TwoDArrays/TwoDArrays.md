@@ -91,3 +91,11 @@ Given the following 4x4 matrix:
 **Expected Spiral Output:** `1 2 3 4 8 12 16 15 14 13 9 5 6 7 11 10`
 
 *To solve this logic, we typically maintain four boundaries (`Top`, `Bottom`, `Left`, `Right`) and navigate systematically through the layers of elements until all locations are visited.*
+
+## Practice Questions
+
+Solutions to practice problems on 2D Arrays:
+
+- **Question 1**: [One.java](./Solutions/One.java) — Count occurrences of an element in a 2D array
+- **Question 2**: [Two.java](./Solutions/Two.java) — Extract and sum a specific row from a matrix
+- **Question 3**: [Three.java](./Solutions/Three.java) — Print a matrix in row-wise and column-wise order

@@ -81,7 +81,8 @@ Learn how to arrange data in a specific order using various algorithms. This mod
 Master matrices, multi-dimensional structures, and their representation in memory. This module covers basic operations, memory layout, and common algorithms like Spiral Matrix.
 
 - **Main Guide**: [2D Arrays Concepts](./TwoDArrays/TwoDArrays.md)
-- **Core Code**: [TwoDArrays.java](./TwoDArrays/TwoDArrays.java)
+- **Core Code**: [TwoDArrays.java](./TwoDArrays/TwoDArrays.java) | [Spiral Matrix](./TwoDArrays/SpiralMatrix.java) | [Diagonal Matrix](./TwoDArrays/DiagnolMatrix.java) | [Sorted Matrix](./TwoDArrays/SortedMatrix.java)
+- **Practice Solutions**: [Java Solutions](./TwoDArrays/Solutions/)
 
 ---
 
