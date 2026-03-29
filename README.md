@@ -83,6 +83,12 @@ Master matrices, multi-dimensional structures, and their representation in memor
 - **Main Guide**: [2D Arrays Concepts](./TwoDArrays/TwoDArrays.md)
 - **Core Code**: [TwoDArrays.java](./TwoDArrays/TwoDArrays.java)
 
+### Module 11: Strings
+Master the concept of Strings in Java: immutability, the String Pool, and common methods. This module covers character sequences, efficiency considerations, and string manipulation techniques.
+
+- **Main Guide**: [Strings Concepts](./Strings/README.md)
+- **Core Code**: [Palindrome Checker](./Strings/Palindrome.java)
+
 ---
 
 *Happy Coding!* 🚀
