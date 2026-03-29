@@ -1,0 +1,32 @@
+{
+  "name": "Main branch protection",
+  "target": "branch",
+  "enforcement": "active",
+  "conditions": {
+    "ref_name": {
+      "include": ["main"],
+      "exclude": []
+    }
+  },
+  "rules": [
+    {
+      "type": "pull_request",
+      "parameters": {
+        "required_approving_review_count": 1,
+        "dismiss_stale_reviews_on_push": false,
+        "require_code_owner_review": false,
+        "restrict_reviewers": {
+          "users": ["shainsethi"],
+          "teams": []
+        }
+      }
+    }
+  ],
+  "bypass_actors": [
+    {
+      "actor_id": "shainsethi",
+      "actor_type": "User",
+      "bypass_mode": "always"
+    }
+  ]
+}
