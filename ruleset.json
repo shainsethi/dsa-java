@@ -4,7 +4,7 @@
   "enforcement": "active",
   "conditions": {
     "ref_name": {
-      "include": ["main"],
+      "include": ["refs/heads/main"],
       "exclude": []
     }
   },
@@ -16,7 +16,7 @@
         "dismiss_stale_reviews_on_push": false,
         "require_code_owner_review": false,
         "restrict_reviewers": {
-          "users": ["shainsethi"],
+          "users": [83071544],
           "teams": []
         }
       }
@@ -24,7 +24,7 @@
   ],
   "bypass_actors": [
     {
-      "actor_id": "shainsethi",
+      "actor_id": 83071544,
       "actor_type": "User",
       "bypass_mode": "always"
     }
