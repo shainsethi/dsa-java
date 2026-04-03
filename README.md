@@ -90,6 +90,11 @@ Master the concept of Strings in Java: immutability, the String Pool, and common
 - **Main Guide**: [Strings Concepts](./Strings/README.md)
 - **Core Code**: [Palindrome Checker](./Strings/Palindrome.java)
 
+### Module 12: Bit Manipulation
+Master how computers process data at the binary level. This module covers binary number systems, bitwise operators, and advanced concepts like 2's complement.
+
+- **Main Guide**: [Bit Manipulation Concepts](./Bitwise/README.md)
+- **Core Code**: [number.java](./Bitwise/number.java)
+
 ---
 
-*Happy Coding!* 🚀
