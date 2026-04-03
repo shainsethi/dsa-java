@@ -1,8 +1,8 @@
-# Java DSA Course 🚀
+# Java DSA Course 
 
 Welcome to my Data Structures and Algorithms repository! This repo contains a comprehensive guide to DSA in Java, starting from the logic-building phase with flowcharts up to advanced implementations.
 
-## 📌 Logic Building: Flowcharts
+## Logic Building: Flowcharts
 If you are a beginner, it is highly recommended to start with the logic-building section. If you already have programming experience, you can skip to the Java code.
 
 - **Main Guide**: [Flowchart Components & Examples](./FlowCharts/FLOWCHART.md)
@@ -14,7 +14,7 @@ If you are a beginner, it is highly recommended to start with the logic-building
 - Loops & Iteration (Sum of N Numbers)
 - Logic Optimization (Prime Number checking)
 
-## 💻 Java Source Code
+## Java Source Code
 
 ### Module 1: Variables & Data Types
 Master the fundamentals of Java programming, including memory management, input/output, and type casting.
