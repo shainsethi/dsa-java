@@ -11,6 +11,19 @@ Welcome to the Bitwise module! This guide covers the fundamentals of bit manipul
 4. [Understanding the 1's Complement (`~`) and Negative Numbers](#4-understanding-the-1s-complement--and-negative-numbers)
     - [How Computers Store Negative Numbers: Two's Complement](#how-computers-store-negative-numbers-twos-complement)
     - [The Shortcut Formula](#the-shortcut-formula)
+5. [Practice Problems](#5-practice-problems)
+    - [Check Odd or Even](#1-check-odd-or-even)
+    - [Get ith Bit](#2-get-ith-bit)
+    - [Set ith Bit](#3-set-ith-bit)
+    - [Clear ith Bit](#4-clear-ith-bit)
+    - [Update ith Bit](#5-update-ith-bit)
+    - [Clear Last i Bits](#6-clear-last-i-bits)
+    - [Clear Range of Bits](#7-clear-range-of-bits)
+    - [Check Power of Two](#8-check-power-of-two)
+    - [Count Set Bits](#9-count-set-bits)
+    - [Fast Exponentiation](#10-fast-exponentiation)
+    - [Swap Two Numbers (XOR)](#11-swap-two-numbers-xor)
+    - [Uppercase ↔ Lowercase Conversion](#12-uppercase--lowercase-conversion)
 
 ---
 
@@ -105,4 +118,208 @@ For any integer `N`, the bitwise NOT operation can always be mathematically eval
 - `~(-3) = -(-3 + 1) = 2`
 
 ---
+
+### 5. Practice Problems
+
+#### 1. Check Odd or Even
+📄 **File:** [OddOrEven.java](./OddOrEven.java)
+
+**Trick:** The last bit (LSB) of any odd number is `1`, and for even it's `0`.
+
+```
+Formula: (n & 1) == 0 → Even, else → Odd
+```
+
+| n (decimal) | n (binary) | n & 1 | Result |
+| :---: | :---: | :---: | :---: |
+| 5 | `0101` | `1` | Odd |
+| 8 | `1000` | `0` | Even |
+
+---
+
+#### 2. Get ith Bit
+📄 **File:** [GetIthBit.java](./GetIthBit.java)
+
+**Trick:** Create a bitmask `1 << i` and AND it with the number.
+
+```
+bitMask = 1 << i
+(n & bitMask) == 0  →  bit is 0
+(n & bitMask) != 0  →  bit is 1
+```
+
+| Step | Binary |
+| --- | --- |
+| n = 5 | `0101` |
+| bitMask (i=2) | `0100` |
+| n & bitMask | `0100` → bit is **1** |
+
+---
+
+#### 3. Set ith Bit
+📄 **File:** [SetIthBit.java](./SetIthBit.java)
+
+**Trick:** OR the number with the bitmask to force the ith bit to `1`.
+
+```
+result = n | (1 << i)
+```
+
+| Step | Binary |
+| --- | --- |
+| n = 5 | `0101` |
+| bitMask (i=1) | `0010` |
+| n \| bitMask | `0111` = **7** |
+
+---
+
+#### 4. Clear ith Bit
+📄 **File:** [ClearIthBit.java](./ClearIthBit.java)
+
+**Trick:** AND the number with the **negated** bitmask to force the ith bit to `0`.
+
+```
+result = n & ~(1 << i)
+```
+
+| Step | Binary |
+| --- | --- |
+| n = 10 | `1010` |
+| bitMask (i=1) | `0010` |
+| ~bitMask | `1101` |
+| n & ~bitMask | `1000` = **8** |
+
+---
+
+#### 5. Update ith Bit
+📄 **File:** [UpdateIthBit.java](./UpdateIthBit.java)
+
+**Trick:** Combines set and clear — choose based on the new bit value.
+
+```
+if newBit == 1  →  n | (1 << i)      // Set
+if newBit == 0  →  n & ~(1 << i)     // Clear
+```
+
+---
+
+#### 6. Clear Last i Bits
+📄 **File:** [ClearLastIBits.java](./ClearLastIBits.java)
+
+**Trick:** Create a mask of all `1`s with the last `i` positions as `0`.
+
+```
+mask = ~0 << i
+result = n & mask
+```
+
+| Step | Binary (8-bit) |
+| --- | --- |
+| ~0 | `11111111` |
+| ~0 << 2 | `11111100` |
+| 15 & mask | `1111 & 11111100 = 1100` = **12** |
+
+---
+
+#### 7. Clear Range of Bits
+📄 **File:** [ClearRangeOfBits.java](./ClearRangeOfBits.java)
+
+**Trick:** Build two masks — one keeping upper bits, one keeping lower bits — and combine them.
+
+```
+upperMask = ~0 << (j + 1)    // keeps bits above j
+lowerMask = (1 << i) - 1     // keeps bits below i
+mask = upperMask | lowerMask
+result = n & mask
+```
+
+---
+
+#### 8. Check Power of Two
+📄 **File:** [PowerOfTwo.java](./PowerOfTwo.java)
+
+**Trick:** A power of 2 has exactly **one** bit set. `n & (n - 1)` removes the lowest set bit.
+
+```
+(n > 0) && (n & (n - 1)) == 0  →  Power of 2
+```
+
+| n | n (binary) | n - 1 (binary) | n & (n-1) | Power of 2? |
+| :---: | :---: | :---: | :---: | :---: |
+| 8 | `1000` | `0111` | `0000` | ✅ Yes |
+| 6 | `0110` | `0101` | `0100` | ❌ No |
+
+---
+
+#### 9. Count Set Bits
+📄 **File:** [CountSetBits.java](./CountSetBits.java)
+
+**Trick:** Check the last bit with `n & 1`, then right-shift. Repeat until `n == 0`.
+
+```
+while (n > 0):
+    if (n & 1) == 1  →  count++
+    n = n >> 1
+```
+
+Example: `10` → `1010` → **2** set bits.
+
+---
+
+#### 10. Fast Exponentiation
+📄 **File:** [FastExponentiation.java](./FastExponentiation.java)
+
+**Trick:** Express the exponent in binary. For each `1`-bit, multiply the corresponding power of `a` into the result. Runs in **O(log n)** time.
+
+```
+a^13, where 13 = 1101 (binary)
+= a^8 * a^4 * a^1
+```
+
+```
+while (n > 0):
+    if (n & 1) == 1  →  result *= base
+    base *= base
+    n >>= 1
+```
+
+---
+
+#### 11. Swap Two Numbers (XOR)
+📄 **File:** [SwapNumbers.java](./SwapNumbers.java)
+
+**Trick:** XOR a number with itself gives `0`; XOR with `0` gives the number back. This lets us swap without a temp variable.
+
+```
+a = a ^ b
+b = a ^ b    // b now has original a
+a = a ^ b    // a now has original b
+```
+
+| Step | a | b |
+| :---: | :---: | :---: |
+| Start | 5 (`101`) | 4 (`100`) |
+| a = a ^ b | 1 (`001`) | 4 (`100`) |
+| b = a ^ b | 1 (`001`) | 5 (`101`) |
+| a = a ^ b | 4 (`100`) | 5 (`101`) |
+
+---
+
+#### 12. Uppercase ↔ Lowercase Conversion
+📄 **File:** [UpperToLowerCase.java](./UpperToLowerCase.java)
+
+**Trick:** The only difference between uppercase and lowercase ASCII is the 5th bit (`00100000` = 32 = `' '` space character).
+
+```
+Uppercase → Lowercase:  char | ' '     (sets 5th bit)
+Lowercase → Uppercase:  char & '_'     (clears 5th bit)
+```
+
+| Char | Binary | Operation | Result |
+| :---: | :---: | :---: | :---: |
+| `A` | `01000001` | `\| 00100000` | `01100001` = `a` |
+| `a` | `01100001` | `& 01011111` | `01000001` = `A` |
+
+---
+
 *Back to [Root README](../README.md)*
