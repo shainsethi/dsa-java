@@ -77,5 +77,61 @@ public class number {
         int lastbit = 2;
         int mask = ~(0) << lastbit;
         System.out.println(value & mask);
+
+        // 2 // 2
+        // 11111111 << j + 1
+        // 11000000
+        // 1 << i
+        // 1 << i - 1
+
+        // clear range of bits
+
+        int range = 1111;
+        int j = ~(0) << 4;
+        int k = 1 << 1;
+        int masking = j | k;
+        System.out.print(range & masking);
+
+        // 2 power ?
+        System.out.print((n & (n - 1)) == 0);
+
+        // 1010
+        // 0101
+        // 0010
+        // 0001
+        // count
+        // (0) {
+        // ++
+        // n > 1
+        // }
+
+        // fast exponentiation
+        // a^13 = a * 13
+
+        // 100101
+
+        // a ^ 1101
+        // 1000 = 8
+        // 100 = 4
+        // 0 = 0
+        // 1 = 1
+        // 13
+
+        // 2^3 + 2^2 + 2^1
+
+        // a ^ (8 + 4 + 1)
+
+        // a = 101
+        // b = 100
+
+        // a = a ^ b;
+        // b = a ^ b;
+        // a = a ^ b;
+
+        // A = 01000001
+        // a = 01100001
+        // '' = 00100000
+        // a
+
     }
 }
